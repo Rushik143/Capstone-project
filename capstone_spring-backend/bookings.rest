@@ -1,0 +1,46 @@
+### Create New booking
+
+POST http://localhost:8080/booking/createNewBookings HTTP/1.1 
+content-type: application/json
+
+{
+"bookingId" : 7,
+"bookingVname" : "nbn",
+"bookingFrom" : "tarale",
+"bookingDestination" : "mumbai",
+"date": "2021-01-10", 
+"typeVahi":"ac", 
+"ttimeTAke": 7 ,
+"price" : 9000 ,
+"time":"07:15:39"
+}
+
+
+### Get All bookings 
+GET http://localhost:8080/booking/list
+
+### Delete booking By Id 
+DELETE http://localhost:8080/booking/delete/39
+
+### Get booking by id 
+GET http://localhost:8080/booking/getbookingbyid/3
+
+
+### get by bookingfrom
+
+GET http://localhost:8080/booking/filterByFrom/tarale
+
+
+### get by ByDestination
+
+GET http://localhost:8080/booking/filterByDestination/rar
+
+
+### get by From and Destination and date
+
+GET http://localhost:8080/booking/filterByFDT/pune/kolkatta/2023-05-25
+
+
+### get by bookingfrom
+
+GET http://localhost:8080/booking/filterByDate/2023-05-25
